@@ -190,12 +190,17 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        scroll_up_down: scroll_up_down {
+        mouse_left_right: mouse_left_right {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&mmv MOVE_RIGHT>, <&mmv MOVE_LEFT>;
+        };
 
-            tap-ms = <80>;
+        scroll_up_down: scroll_up_down {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "SCROLL_UP_DOWN";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
     };
 
@@ -218,7 +223,7 @@
                                            &lt 3 RETURN    &lt 2 ESCAPE  &lkm 2 BACKSPACE  &lt 1 SPACE
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>, <&scroll_up_down>;
+            sensor-bindings = <&mouse_left_right>, <&scroll_up_down>;
         };
 
         num_layer {
