@@ -47,6 +47,7 @@
             timeout-ms = <COMBOMS>;
             key-positions = <6 7>;
             bindings = <&kp DEL>;
+            layers = <0>;
         };
 
         compatible = "zmk,combos";
@@ -62,31 +63,42 @@
         combo_tab {
             bindings = <&kp TAB>;
             key-positions = <22 21>;
+            layers = <0>;
         };
 
         combo_tilde_caret {
             bindings = <&tilde_caret_morph>;
             key-positions = <18 19>;
+            layers = <0>;
         };
 
         combo_semicolon {
             bindings = <&kp SEMICOLON>;
             key-positions = <27 28>;
+            layers = <0>;
         };
 
         combo_caps_word {
             bindings = <&caps_word>;
             key-positions = <13 16>;
+            layers = <0>;
         };
 
         combo_underscore {
             bindings = <&kp UNDERSCORE>;
             key-positions = <23 26>;
+            layers = <0>;
         };
 
         combo_dash {
             bindings = <&kp MINUS>;
             key-positions = <3 6>;
+            layers = <0>;
+        };
+
+        combo_three_backticks {
+            bindings = <&macro_three_backticks>;
+            key-positions = <24 23>;
         };
     };
 
@@ -107,6 +119,13 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp N8 &kp N3 &kp N9 &kp N9 &kp N8 &kp N8 &kp N0 &kp N0 &kp N2 &kp N2 &kp N2>;
+        };
+
+        macro_three_backticks: macro_three_backticks {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
+            label = "MACRO_THREE_BACKTICKS";
         };
     };
 
@@ -192,18 +211,17 @@
 
         scroll_up_down: scroll_up_down {
             compatible = "zmk,behavior-sensor-rotate";
-
             #sensor-binding-cells = <0>;
-
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
             tap-ms = <50>;
         };
 
         mouse_left_right: mouse_left_right {
             compatible = "zmk,behavior-sensor-rotate";
-
             #sensor-binding-cells = <0>;
             bindings = <&mmv MOVE_X(100000)>, <&mmv MOVE_X(-100000)>;
+
             tap-ms = <20>;
         };
     };
