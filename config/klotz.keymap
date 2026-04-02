@@ -99,6 +99,7 @@
         combo_three_backticks {
             bindings = <&macro_three_backticks>;
             key-positions = <24 23>;
+            layers = <1>;
         };
     };
 
@@ -124,7 +125,7 @@
         macro_three_backticks: macro_three_backticks {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE>;
+            bindings = <&kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE &kp GRAVE>;
             label = "MACRO_THREE_BACKTICKS";
         };
     };
