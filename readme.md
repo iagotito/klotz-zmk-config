@@ -11,7 +11,19 @@
 KLOTZ is a 34 key column-staggered split keyboard running [ZMK](https://zmk.dev/). It supports a low profile encoder and three status LEDs on every side.
 
 ![KLOTZ layout](/docs/images/KLOTZ_layout.svg)
-![KLOTZ layout](/docs/images/Keymap.svg)
+
+
+## MY KEYMAP
+
+Using [nickcoutsos's keyboard
+editor](https://nickcoutsos.github.io/keymap-editor/) to customize the
+keymap.
+
+Using [caksoylar's keymap
+drawer](https://github.com/caksoylar/keymap-drawer) to generate the
+keymap images.
+
+![KLOTZ layout](/docs/images/my_keymap.svg)
 
 
 ## HOW TO USE
@@ -26,9 +38,3 @@ KLOTZ is a 34 key column-staggered split keyboard running [ZMK](https://zmk.dev/
 - the keyboard should now appear as a mass storage device
 - drag'n'drop the `klotz_left-nice_nano_v2-zmk.uf2` file from the archive onto the storage device
 - repeat this process with the right half and the `klotz_right-nice_nano_v2-zmk.uf2` file.
-
-
-
-
-
-
