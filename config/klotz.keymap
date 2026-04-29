@@ -108,8 +108,8 @@
             layers = <5 7>;
         };
 
-        shift_lol_combo {
-            bindings = <&kp LEFT_SHIFT>;
+        alt_lol_combo {
+            bindings = <&kp LEFT_ALT>;
             key-positions = <33 32>;
             layers = <7>;
         };
