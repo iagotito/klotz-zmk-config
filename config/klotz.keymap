@@ -107,6 +107,24 @@
             key-positions = <31 32>;
             layers = <5 7>;
         };
+
+        shift_lol_combo {
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <33 32>;
+            layers = <7>;
+        };
+
+        shop_lol_combo {
+            bindings = <&kp P>;
+            key-positions = <5 15>;
+            layers = <7>;
+        };
+
+        base_lol_combo {
+            bindings = <&kp B>;
+            key-positions = <25 15>;
+            layers = <7>;
+        };
     };
 
     macros {
